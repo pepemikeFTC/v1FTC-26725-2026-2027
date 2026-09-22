@@ -28,8 +28,8 @@ public class MecanumD {
 
         imu = hwMap.get(IMU.class, "imu2") ;
         RevHubOrientationOnRobot RevOrientation = new RevHubOrientationOnRobot(
-                RevHubOrientationOnRobot.LogoFacingDirection.UP,
-                RevHubOrientationOnRobot.UsbFacingDirection.FORWARD);
+                RevHubOrientationOnRobot.LogoFacingDirection.FORWARD,
+                RevHubOrientationOnRobot.UsbFacingDirection.LEFT);
 
 
         imu.initialize(new IMU.Parameters(RevOrientation));
